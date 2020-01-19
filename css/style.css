@@ -1,46 +1,58 @@
 @font-face {
-    font-family: oswaldBold;
-    src: url(../fonts/oswald/Oswald-Bold.ttf);
+    font-family: frontPageNue;
+    src: url(../fonts/front-page-neue/FrontPageNeue.otf);
 }
 
-.hero-image {
-    width:100%;
-    height:100vh;
-    background: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.hero-section {
+    height: 100vh;
 }
 
-.text-blurb {
-    color:white;
-    /* text-shadow:2px 2px #333; */
-    font-family: oswaldBold;
+.half-hero-section {
+    height: 50vh;
 }
 
-.text-blurb > h1 {
-    font-size: 55px;
+h1 {
+    font-family: 'frontPageNue';
 }
 
 .jumbotron {
-    height: 100vh;
 
     background: url('../images/sarah-palin-giant-cropped2.jpg');
-    /* background-size: 100vh; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#info-panel {
-    background-color: white;
+#intro-card {
+    margin-top: 3em;
 }
 
-#info-panel > img {
-    height: auto;
-    width: 80%;
+#intro-card-title {
+    line-height: 90%;
+    font-size: 4.1em;
+    text-transform: uppercase;
 }
 
-.top-height {
-    height: 100vh;
+#intro-card-text {
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+#my-america-title {
+    font-size: 5em;
+}
+
+#my-america-cells:nth-child(even) {
+    background-color: grey;
+    color: white;
+}
+
+#my-america-cells > * > h2 {
+    font-size: 3.5em;
+    font-family: 'frontPageNue';
+}
+
+#my-america-cells > * > p {
+    font-size: 2em;
+    line-height: 1.3em;
 }
