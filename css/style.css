@@ -15,16 +15,6 @@
     src: url(../fonts/carson-font/Carson-wVRx.ttf);
 }
 
-@media(max-width: 1200px) {
-    html {
-        font-size: 0.7rem;
-    }
-
-    .content-title {
-
-    }
-}
-
 #navigation-bar {
     height: var(--navbar-height);
     background-color: white;
@@ -105,13 +95,8 @@
 .duo-bios .card {
     color: white;
     border: 1px red;
-    max-width: 600px;
+    max-width: 700px;
     background-color: transparent;
-    
-}
-
-.duo-bios:nth-child(1) {
-    width: 10px;
 }
 
 .half-portrait {
@@ -176,3 +161,20 @@
 }
 
 /***********************************/
+
+@media(max-width: 768px) {
+    .duo-bios {
+        margin: 0 2% 0 2%;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    .duo-bios img {
+        background-color: white;
+        border-radius: 50%;
+    }
+}
