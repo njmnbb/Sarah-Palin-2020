@@ -1,5 +1,7 @@
 :root {
     --palin-red: #ED1C24;
+    --pastel-red: #d35050;
+    --pastel-blue: #6281c6;
     --navbar-height: 120px;
 }
 
@@ -32,12 +34,10 @@
 .hero-section {
     height: calc(100vh - var(--navbar-height));
     min-height: 800px;
-    /* max-width: 60%; */
 }
 
 #hero-section-headshot {
-    margin-top: 300px;
-    height: 1000px;
+    height: 820px;
     width: auto;
 }
 
@@ -46,30 +46,82 @@
 }
 
 .hero-section-content {
-    height: 100vh;
+    min-height: 98vh;
+    flex-flow: column;
+}
+
+.hero-section-blue {
+    background-color: var(--pastel-blue);
+    color: white;
 }
 
 .content-title {
     margin-top: 20px;
-    font-size: 4.4em;
+    font-family: arial;
+    display: inline-block;
+    flex: 0 0 auto;
+    max-width: 100%;
 }
 
 .content-title:after {
     content: "";
-    position: absolute;
-    width: 97%;
-    height: 0px;
+    display: block;
+    width: 100%;
     bottom: 0;
-    left: 1.4%;
-    border-bottom: 0.1em solid var(--palin-red);
+    border-bottom: 0.07em solid var(--palin-red);
+    margin-top: -10px;
 }
+
+/* Tynamic Duo Section */
+
+.duo-bios-container {
+    flex-flow: column; 
+    min-height: 98vh; 
+    background-color: #6281c6; 
+    color: white;
+}
+
+.duo-bios-header-container {
+    justify-content: center;
+}
+
+.duo-bios {
+    margin: 0 17% 0 17%;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+.duo-bios .card {
+    color: white;
+    border: 1px red;
+    max-width: 700px;
+    background-color: transparent;
+}
+
+.half-portrait {
+    max-height: 100%;
+    position: absolute;
+    /* bottom: 0; */
+}
+
+.half-portrait-left {
+    left: 0;
+}
+
+.half-portrait-right {
+    right: 0;
+}
+
+/* Important Issues Section */
 
 .carousel {
     margin-top: 50px;
     min-height: 600px;
 
-    background-color: #e0e0e0;
-    border: 1px black solid;
+    background-color: white;
+    border: 1px grey solid;
+    border-radius: 4px;
 
     -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
@@ -77,16 +129,16 @@
 }
 
 .arrow {
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
 }
 
 .prev-icon {
-    background-image: url("../images/iconfinder_icon-ios7-arrow-back_211686.png");
+    background-image: url("../images/prev-arrow.svg");
 }
 
 .next-icon {
-    background-image: url("../images/iconfinder_icon-ios7-arrow-forward_211688.png");
+    background-image: url("../images/next-arrow.svg");
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -97,5 +149,32 @@
     margin: 40px 0px 40px 0px;
     max-height: 250px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--pastel-red);
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators li.active {
+    background-color: var(--palin-red);
+}
+
+/***********************************/
+
+@media(max-width: 768px) {
+    .duo-bios {
+        margin: 0 2% 0 2%;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    .duo-bios img {
+        background-color: white;
+        border-radius: 50%;
+    }
 }
