@@ -99,6 +99,10 @@
     background-color: transparent;
 }
 
+.duo-bios p {
+    font-size: 1.7rem;
+}
+
 .half-portrait {
     max-height: 100%;
     position: absolute;
@@ -163,8 +167,31 @@
 /***********************************/
 
 @media(max-width: 768px) {
+    .content-title {
+        margin-top: 20px;
+        font-family: arial;
+        display: inline-block;
+        flex: 0 0 auto;
+        max-width: 100%;
+
+        font-size: 3rem;
+    }
+
+    .content-title:after {
+        content: "";
+        display: block;
+        width: 100%;
+        bottom: 0;
+        border-bottom: 0.07em solid var(--palin-red);
+        margin-top: -5px;
+    }
+
     .duo-bios {
         margin: 0 2% 0 2%;
+    }
+
+    .duo-bios p {
+        font-size: 1.3rem;
     }
 }
 
