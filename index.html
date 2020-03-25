@@ -52,7 +52,7 @@
                             </div>
                             
                             <div class='card-body col-xl-12 col-8'>
-                                <h1 class='card-title'>Meet Sarah Palin</h3>
+                                <h1 class='card-title'>Meet Sarah Palin</h1>
                                 <p class="card-text">"I got my start in Alaska. I was a governor. I helped people. It was good. I want to be President. 
                                     I want to help people. I like America because it is great. I want to be a lot. Thank you."</p>
                             </div>
@@ -79,7 +79,7 @@
                         <div class='card text-right' style='margin-left: auto;'>
                             <div class='row'>
                                 <div class='card-body col-xl-12 col-8'>
-                                    <h1 class='card-title'>Meet Moose</h3>
+                                    <h1 class='card-title'>Meet Moose</h1>
                                     <p class="card-text">"I'm just a moose. Like, a regular moose."</p>
                                 </div>
 
@@ -98,7 +98,11 @@
         <div class='container hero-section-content'>
             <h1 class='display-3 content-title'>VERY EXTREMELY IMPORTANT ISSUES</h1>
         
-            <div id="demo" class="carousel slide mx-auto" data-ride="carousel" data-interval="false">
+            <div id="demo" class="carousel slide mx-auto d-none d-lg-block" data-ride="carousel" data-interval="false">
+                <div class='row'>
+                    <h1 class='offset-1'>What do your candidates think about...</h1>
+                </div>
+                
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
@@ -107,32 +111,34 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class='row justify-content-lg-center'>
-                            <div class='col-lg-5'>
-                                <img src='images/palin-headshot-copy-min.png' class='carousel-headshot mx-auto d-block'/>
-                                <h1 class='carousel-issue-title'>Global Warming</h1>
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Global Warming?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-5'>
+                                <img src='images/palin-headshot-copy-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
                                 <p class='carousel-issue-body'>"Of course global warming exists. Instead of trying to ‘stop it’ or ‘save our children’, let’s go all
                                     in on warming the planet. I always get a bit chilly anywhere north of Kansas. Imagine a nice
                                     margarita at Christmas time. Yes please!"</p>
                             </div>
-                            <div class='col-lg-5'>
+                            <div class='col-5'>
                                 <img src='images/moose-headshot-min.png' class='carousel-headshot mx-auto d-block'/>
-                                <h1 class='carousel-issue-title'>Global Warming</h1>
                                 <p class='carousel-issue-body'>"Global warming exists as a natural product of the circonian redaction effect, a natural worldly phenomenon. 
                                     Our focus should be on privatizing a healthier planet through the American intellect versus getting our government involved to slow down our progress."</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class='row justify-content-lg-center'>
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Taxes?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
                             <div class='col-lg-5'>
                                 <img src='images/palin-headshot-copy-min.png' class='carousel-headshot mx-auto d-block'/>
-                                <h1 class='carousel-issue-title'>Taxes</h1>
                                 <p class='carousel-issue-body'>"None. Next issue! This is fun."</p>
                             </div>
                             <div class='col-lg-5'>
                                 <img src='images/moose-headshot-min.png' class='carousel-headshot mx-auto d-block'/>
-                                <h1 class='carousel-issue-title'>Taxes</h1>
                                 <p class='carousel-issue-body'>"We need a more nuanced and refined approach to Reagnomics, one that involves empathy and compassion. 
                                     I believe Regan was right on principle, but his execution is where the American people felt frustrated. We’ll fix that."
                                 </p>
@@ -140,17 +146,18 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class='row justify-content-lg-center'>
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Trade?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
                             <div class='col-lg-5'>
                                 <img src='images/palin-headshot-copy-min.png' class='carousel-headshot mx-auto d-block'/>
-                                <h1 class='carousel-issue-title'>Trade</h1>
                                 <p class='carousel-issue-body'>"Okie, well we all know that the bad men in China took all our jobs! What the heckity heck? 
                                     We have to go get new jobs for all my friends out back here in America.
                                     They’ll be fine on rice, I tell you and no wranglin’ with Mama Palin on that."</p>
                             </div>
                             <div class='col-lg-5'>
                                 <img src='images/moose-headshot-min.png' class='carousel-headshot mx-auto d-block'/>
-                                <h1 class='carousel-issue-title'>Trade</h1>
                                 <p class='carousel-issue-body'>"The writing on the wall is clear. The U.S. export economy has a 3.2 trillion lean density barrier imposed by a reverse consumer index. 
                                     We counter act this by putting money directly into the hands of local exporters. 
                                     Simply put, we need to get tough on China"</p>
@@ -166,6 +173,108 @@
                     <span class="next-icon arrow"></span>
                 </a>
             </div>
+
+            <div id="demo-mobile" class="carousel slide mx-auto d-lg-none d-block" data-ride="carousel" data-interval="false">
+                <div class='row'>
+                    <h1 class='offset-1'>What do your candidates think about...</h1>
+                </div>
+                
+                <ul class="carousel-indicators">
+                    <li data-target="#demo-mobile" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo-mobile" data-slide-to="1"></li>
+                    <li data-target="#demo-mobile" data-slide-to="2"></li>
+                    <li data-target="#demo-mobile" data-slide-to="3"></li>
+                    <li data-target="#demo-mobile" data-slide-to="4"></li>
+                    <li data-target="#demo-mobile" data-slide-to="5"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Global Warming?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-7'>
+                                <img src='images/palin-headshot-copy-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
+                                <p class='carousel-issue-body'>"Of course global warming exists. Instead of trying to ‘stop it’ or ‘save our children’, let’s go all
+                                    in on warming the planet. I always get a bit chilly anywhere north of Kansas. Imagine a nice
+                                    margarita at Christmas time. Yes please!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Global Warming?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-7'>
+                                <img src='images/moose-headshot-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
+                                <p class='carousel-issue-body'>"Global warming exists as a natural product of the circonian redaction effect, a natural worldly phenomenon. 
+                                    Our focus should be on privatizing a healthier planet through the American intellect versus getting our government involved to slow down our progress."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Taxes?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-7'>
+                                <img src='images/palin-headshot-copy-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
+                                <p class='carousel-issue-body'>"None. Next issue! This is fun."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Taxes?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-7'>
+                                <img src='images/moose-headshot-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
+                                <p class='carousel-issue-body'>"We need a more nuanced and refined approach to Reagnomics, one that involves empathy and compassion. 
+                                    I believe Regan was right on principle, but his execution is where the American people felt frustrated. We’ll fix that."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Trade?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-7'>
+                                <img src='images/palin-headshot-copy-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
+                                <p class='carousel-issue-body'>"Okie, well we all know that the bad men in China took all our jobs! What the heckity heck? 
+                                    We have to go get new jobs for all my friends out back here in America.
+                                    They’ll be fine on rice, I tell you and no wranglin’ with Mama Palin on that."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='row'>
+                            <h1 class='offset-1 carousel-issue-title'>Trade?</h1>
+                        </div>
+                        <div class='row justify-content-center'>
+                            <div class='col-7'>
+                                <img src='images/moose-headshot-min.png' class='img-fluid carousel-headshot mx-auto d-block'/>
+                                <p class='carousel-issue-body'>"The writing on the wall is clear. The U.S. export economy has a 3.2 trillion lean density barrier imposed by a reverse consumer index. 
+                                    We counter act this by putting money directly into the hands of local exporters. 
+                                    Simply put, we need to get tough on China"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#demo-mobile" data-slide="prev">
+                    <span class="prev-icon arrow"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo-mobile" data-slide="next">
+                    <span class="next-icon arrow"></span>
+                </a>
+            </div>
         </div>
+
+        
     </body>
 </html>
