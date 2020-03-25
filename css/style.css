@@ -21,6 +21,12 @@
     font-size: 2.4em;
     font-family: carson;
     font-weight: bold;
+
+    position: fixed; 
+    z-index: 9999;
+    -webkit-box-shadow: 0px 3px 3px 3px rgba(31,31,31,0.63);
+    -moz-box-shadow: 0px 3px 3px 3px rgba(31,31,31,0.63);
+    box-shadow: 0px 3px 3px 3px rgba(31,31,31,0.63);
 }
 
 #navbar-logo {
@@ -32,7 +38,7 @@
 }
 
 .hero-section {
-    height: calc(100vh - var(--navbar-height));
+    height: 100vh;
     min-height: 800px;
 }
 
@@ -46,7 +52,7 @@
 }
 
 .hero-section-content {
-    min-height: 98vh;
+    min-height: calc(100vh - var(--navbar-height));;
     flex-flow: column;
 }
 
@@ -76,7 +82,7 @@
 
 .duo-bios-container {
     flex-flow: column; 
-    min-height: 98vh; 
+    min-height: calc(100vh - var(--navbar-height));
     background-color: #6281c6; 
     color: white;
 }
@@ -99,6 +105,10 @@
     background-color: transparent;
 }
 
+.duo-bios p {
+    font-size: 1.7rem;
+}
+
 .half-portrait {
     max-height: 100%;
     position: absolute;
@@ -117,7 +127,8 @@
 
 .carousel {
     margin-top: 50px;
-    min-height: 600px;
+    /* min-height: 600px; */
+    height: auto;
 
     background-color: white;
     border: 1px grey solid;
@@ -152,6 +163,10 @@
     background-color: var(--pastel-red);
 }
 
+.carousel-issue-title {
+    font-weight: bold;
+}
+
 .carousel-indicators li {
     background-color: black;
 }
@@ -160,11 +175,42 @@
     background-color: var(--palin-red);
 }
 
+.carousel-inner {
+    margin-bottom: 50px;
+}
+
 /***********************************/
 
 @media(max-width: 768px) {
+    .content-title {
+        margin-top: 20px;
+        font-family: arial;
+        display: inline-block;
+        flex: 0 0 auto;
+        max-width: 100%;
+
+        font-size: 3rem;
+    }
+
+    .content-title:after {
+        content: "";
+        display: block;
+        width: 100%;
+        bottom: 0;
+        border-bottom: 0.07em solid var(--palin-red);
+        margin-top: -5px;
+    }
+
     .duo-bios {
         margin: 0 2% 0 2%;
+    }
+
+    .duo-bios p {
+        font-size: 1.3rem;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 20%;
     }
 }
 
