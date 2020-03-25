@@ -3,6 +3,7 @@
     --pastel-red: #d35050;
     --pastel-blue: #6281c6;
     --navbar-height: 120px;
+    --navbar-height-mobile: 90px;
 }
 
 @font-face {
@@ -52,7 +53,7 @@
 }
 
 .hero-section-content {
-    min-height: calc(100vh - var(--navbar-height));;
+    min-height: calc(100vh - var(--navbar-height));
     flex-flow: column;
 }
 
@@ -126,9 +127,9 @@
 /* Important Issues Section */
 
 .carousel {
-    margin-top: 50px;
-    /* min-height: 600px; */
-    height: auto;
+    margin: auto 0 auto 0;
+    height: 600px;
+    /* height: auto; */
 
     background-color: white;
     border: 1px grey solid;
@@ -182,6 +183,14 @@
 /***********************************/
 
 @media(max-width: 768px) {
+    #navigation-bar {
+        height: var(--navbar-height-mobile);
+    }
+
+    .hero-section-content {
+        min-height: calc(100vh - var(--navbar-height-mobile));
+    }
+
     .content-title {
         margin-top: 20px;
         font-family: arial;
@@ -201,12 +210,24 @@
         margin-top: -5px;
     }
 
+    .duo-bios-container {
+        min-height: calc(100vh - var(--navbar-height-mobile));
+    }
+
     .duo-bios {
         margin: 0 2% 0 2%;
     }
 
     .duo-bios p {
         font-size: 1.3rem;
+    }
+
+    .carousel {
+        height: 500px;
+    }
+
+    .carousel-headshot {
+        margin: 15px 0 10px 0;
     }
 
     .carousel-control-prev, .carousel-control-next {
