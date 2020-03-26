@@ -84,6 +84,8 @@
     flex-flow: column; 
     min-height: calc(100vh - var(--navbar-height));
     background-color: #6281c6; 
+    background-image: url('../images/denali.jpg');
+    background-size: cover;
     color: white;
 }
 
@@ -101,14 +103,14 @@
 }
 
 .duo-bios .card {
-    color: white;
-    border: 1px red;
+    color: black;
     max-width: 700px;
-    background-color: transparent;
+    background-color: rgb(255,255,255, 0.5);
 }
 
 .duo-bios p {
     font-size: 1.7rem;
+    opacity: 1;
 }
 
 .half-portrait {
@@ -216,6 +218,7 @@
 
     .duo-bios-container {
         min-height: calc(100vh - var(--navbar-height-mobile));
+        background-position: -300px 0px;
     }
 
     .duo-bios {
@@ -234,8 +237,21 @@
         margin: 15px 0 10px 0;
     }
 
+    .carousel-control-prev {
+        margin-left: 3%;
+    }
+
+    .carousel-control-next {
+        margin-right: 3%;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+    }
+
     .carousel-control-prev, .carousel-control-next {
-        width: 20%;
+        width: 15%;
     }
 }
 
