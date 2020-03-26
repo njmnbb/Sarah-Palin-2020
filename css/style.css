@@ -64,9 +64,11 @@
 
 .content-title {
     margin-top: 20px;
+    margin-bottom: 0px;
     font-family: arial;
-    display: inline-block;
-    max-width: 100%;
+    /* display: inline-block; */
+
+    font-weight: bold;
 }
 
 .content-title:after {
@@ -142,6 +144,10 @@
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75); */
 }
 
+.carousel-header {
+    margin-top: 10px;
+}
+
 .arrow {
     height: 50px;
     width: 50px;
@@ -160,7 +166,7 @@
 }
 
 .carousel-headshot {
-    margin: 40px 0px 40px 0px;
+    margin: 30px 0px 30px 0px;
     max-height: 250px;
     border-radius: 50%;
     background-color: var(--pastel-red);
@@ -186,6 +192,21 @@
     margin-bottom: 50px;
 }
 
+.deep-container {
+    height: calc(100vh - var(--navbar-height));
+    background-color: rgb(242,242,242);
+    background-size: cover;
+}
+
+.deep-card {
+    text-align: center;
+}
+
+.deep-card img {
+    margin: 0 auto 0 auto;
+    max-height: 225px;
+}
+
 /***********************************/
 
 @media(max-width: 768px) {
@@ -198,22 +219,12 @@
     }
 
     .content-title {
-        margin-top: 20px;
-        font-family: arial;
-        display: inline-block;
-        flex: 0 0 auto;
-        max-width: 100%;
-
         font-size: 3rem;
     }
 
     .content-title:after {
-        content: "";
-        display: block;
-        width: 100%;
-        bottom: 0;
-        border-bottom: 0.07em solid var(--palin-red);
-        margin-top: -5px;
+        width: 86%;
+        margin: -1px auto 0 auto;
     }
 
     .duo-bios-container {
