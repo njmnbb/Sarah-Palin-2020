@@ -66,7 +66,6 @@
     margin-top: 20px;
     font-family: arial;
     display: inline-block;
-    flex: 0 0 auto;
     max-width: 100%;
 }
 
@@ -88,8 +87,10 @@
     color: white;
 }
 
-.duo-bios-header-container {
+.duo-bios-body-container {
     justify-content: center;
+    flex: 1;
+    position: relative;
 }
 
 .duo-bios {
@@ -129,15 +130,14 @@
 .carousel {
     margin: auto 0 auto 0;
     height: 600px;
-    /* height: auto; */
 
     background-color: white;
-    border: 1px grey solid;
+    border: 1px rgb(202, 202, 202) solid;
     border-radius: 4px;
 
-    -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75); */
 }
 
 .arrow {
@@ -166,6 +166,10 @@
 
 .carousel-issue-title {
     font-weight: bold;
+}
+
+.carousel-issue-body {
+    font-size: 1.1rem;
 }
 
 .carousel-indicators li {
@@ -223,7 +227,7 @@
     }
 
     .carousel {
-        height: 500px;
+        height: 450px;
     }
 
     .carousel-headshot {
