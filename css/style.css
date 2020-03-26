@@ -3,7 +3,7 @@
     --pastel-red: #d35050;
     --pastel-blue: #6281c6;
     --navbar-height: 120px;
-    --navbar-height-mobile: 90px;
+    --navbar-height-mobile: 60px;
 }
 
 @font-face {
@@ -31,7 +31,7 @@
 }
 
 #navbar-logo {
-    width: 4.5em;
+    height: 100%;
 }
 
 .hero-section-container {
