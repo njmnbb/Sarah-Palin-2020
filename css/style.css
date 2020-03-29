@@ -220,13 +220,19 @@
     color: var(--palin-red);
 }
 
+.error-page-container {
+    height: calc(100vh - var(--navbar-height));
+    margin-top: var(--navbar-height);
+}
+
 .error-page-image-container {
     flex: 1 1 auto; 
     position: relative;
 }
 
 .error-page-image {
-    height: 70%; 
+    height: 70%;
+    min-height: 500px;
     width: 100%; 
     object-fit: contain;
 }
@@ -330,8 +336,17 @@
         font-size: 2rem;
     }
 
+    .error-page-container {
+        margin-top: var(--navbar-height-mobile);
+        height: auto;
+    }
+
     .error-page-image {
         height: 60%;
+    }
+
+    .error-page-message, .error-page-button {
+        margin: 20px 0 20px 0;
     }
 }
 
