@@ -220,13 +220,19 @@
     color: var(--palin-red);
 }
 
+.error-page-container {
+    height: calc(100vh - var(--navbar-height));
+    margin-top: var(--navbar-height);
+}
+
 .error-page-image-container {
     flex: 1 1 auto; 
     position: relative;
 }
 
 .error-page-image {
-    height: 70%; 
+    height: 70%;
+    min-height: 500px;
     width: 100%; 
     object-fit: contain;
 }
@@ -235,19 +241,53 @@
     margin: auto 0 auto 0;
 }
 
-.error-page-button {
+.error-page-button, .donate-button {
     background-color: var(--palin-red);
     margin: auto 0 auto 0;
 }
 
-.error-page-link {
+.error-page-link, .donate-link {
     color: white;
     text-decoration: none;
     font-size: 2rem;
 }
 
-.error-page-link:visited {
+.error-page-link:visited, .donate-link:visited {
     color: white;
+}
+
+.donate-box {
+    margin: 50px 0 50px 0;
+    height: 50vh;
+    background-image: url('../images/Sarah Palin-02-min.png');
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.donate-button {
+    display: inline;
+}
+
+.donate-link {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.donate-pipe {
+    height: 100%; 
+    width: 5px; 
+    background-color: red;
+}
+
+.donate-text > * {
+    color: white;
+    font-weight: bold;
+}
+
+.donate-text > h1 {
+    font-size: 3.8rem;
 }
 
 /***********************************/
@@ -255,10 +295,6 @@
 @media(max-width: 768px) {
     #navigation-bar {
         height: var(--navbar-height-mobile);
-    }
-
-    .intro-image {
-
     }
 
     .hero-section-container {
@@ -330,8 +366,21 @@
         font-size: 2rem;
     }
 
+    .error-page-container {
+        margin-top: var(--navbar-height-mobile);
+        height: auto;
+    }
+
     .error-page-image {
         height: 60%;
+    }
+
+    .error-page-message, .error-page-button {
+        margin: 20px 0 20px 0;
+    }
+
+    .donate-link {
+        font-size: 2.2rem;
     }
 }
 
