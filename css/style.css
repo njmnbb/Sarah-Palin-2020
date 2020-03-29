@@ -22,6 +22,7 @@
     font-size: 2.4em;
     font-family: carson;
     font-weight: bold;
+    top: 0;
 
     position: fixed; 
     z-index: 9999;
@@ -36,7 +37,9 @@
 
 .hero-section-container {
     background-color: var(--palin-red);
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(100vh - var(--navbar-height));
+    margin-top: var(--navbar-height);
 }
 
 .hero-section {
@@ -50,11 +53,14 @@
 
 .donate-card {
     font-size: 2.4em;
+    width: 80%;
 }
 
 .hero-section-content {
     min-height: calc(100vh - var(--navbar-height));
     flex-flow: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .hero-section-blue {
@@ -63,7 +69,6 @@
 }
 
 .content-title {
-    margin-top: 20px;
     margin-bottom: 0px;
     font-family: arial;
     /* display: inline-block; */
@@ -83,6 +88,7 @@
 /* Tynamic Duo Section */
 
 .duo-bios-container {
+    padding: 20px 0 0 0;
     flex-flow: column; 
     min-height: calc(100vh - var(--navbar-height));
     background-color: #6281c6; 
@@ -196,6 +202,7 @@
     min-height: calc(100vh - var(--navbar-height));
     background-color: rgb(242,242,242);
     background-size: cover;
+    padding: 20px 0 20px 0;
 }
 
 .deep-card {
@@ -213,11 +220,50 @@
     color: var(--palin-red);
 }
 
+.error-page-image-container {
+    flex: 1 1 auto; 
+    position: relative;
+}
+
+.error-page-image {
+    height: 70%; 
+    width: 100%; 
+    object-fit: contain;
+}
+
+.error-page-message {
+    margin: auto 0 auto 0;
+}
+
+.error-page-button {
+    background-color: var(--palin-red);
+    margin: auto 0 auto 0;
+}
+
+.error-page-link {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.error-page-link:visited {
+    color: white;
+}
+
 /***********************************/
 
 @media(max-width: 768px) {
     #navigation-bar {
         height: var(--navbar-height-mobile);
+    }
+
+    .intro-image {
+
+    }
+
+    .hero-section-container {
+        margin-top: var(--navbar-height-mobile);
+        min-height: calc(100vh - var(--navbar-height-mobile));
     }
 
     .hero-section-content {
@@ -247,7 +293,7 @@
 
     .carousel {
         height: 450px;
-        margin: 30px 0 30px 0;
+        width: 100%;
     }
 
     .carousel-headshot {
@@ -282,6 +328,10 @@
 
     .deep-card h1 {
         font-size: 2rem;
+    }
+
+    .error-page-image {
+        height: 60%;
     }
 }
 
