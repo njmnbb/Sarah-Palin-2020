@@ -299,6 +299,10 @@
     height: 50vh;
 }
 
+.footer img {
+    width: 60%;
+}
+
 .footer-pipe {
     width: 3px;
     height: 100%;
