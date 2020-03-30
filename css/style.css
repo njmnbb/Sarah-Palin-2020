@@ -2,8 +2,8 @@
     --palin-red: #ED1C24;
     --pastel-red: #d35050;
     --pastel-blue: #6281c6;
-    --navbar-height: 120px;
-    --navbar-height-mobile: 60px;
+    --navbar-height: 12vh;
+    --navbar-height-mobile: 10vh;
 }
 
 @font-face {
