@@ -55,18 +55,6 @@
     width: 80%;
 }
 
-.hero-section-content {
-    min-height: calc(100vh - var(--navbar-height));
-    flex-flow: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.hero-section-blue {
-    background-color: var(--pastel-blue);
-    color: white;
-}
-
 .content-title {
     margin-bottom: 0px;
     font-family: arial;
@@ -100,7 +88,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../images/denali.jpg');
+    background-image: url('../images/denali-min.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -127,9 +115,13 @@
     border: 1px solid grey;
     background-color: rgb(255,255,255, 0.9);
 
-    -webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.75);
+}
+
+.duo-bios .card-title {
+    font-weight: bold;
 }
 
 .duo-bios p {
@@ -152,6 +144,12 @@
 
 /* Important Issues Section */
 
+.issues-section-container {
+    min-height: calc(100vh - var(--navbar-height));
+    flex-flow: column;
+    padding-top: 20px;
+}
+
 .carousel {
     margin: auto 0 auto 0;
     height: 600px;
@@ -159,14 +157,11 @@
     background-color: white;
     border: 1px rgb(202, 202, 202) solid;
     border-radius: 4px;
+    /* padding-top: 20px; */
 
     /* -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75); */
-}
-
-.carousel-header {
-    margin-top: 10px;
 }
 
 .arrow {
@@ -194,7 +189,10 @@
 }
 
 .carousel-issue-title {
+    font-size: 3.3rem;
     font-weight: bold;
+
+    margin: 0 auto 0 auto;
 }
 
 .carousel-issue-body {
@@ -210,14 +208,15 @@
 }
 
 .carousel-inner {
-    margin-bottom: 50px;
+    /* margin: auto 0 auto 0; */
+    margin: 20px 0 50px 0;
 }
 
 .deep-container {
     min-height: calc(100vh - var(--navbar-height));
     background-color: rgb(242,242,242);
     background-size: cover;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 0px 0;
 }
 
 .deep-card {
@@ -344,12 +343,9 @@
         min-height: calc(100vh - var(--navbar-height-mobile));
     }
 
-    .hero-section-content {
-        min-height: calc(100vh - var(--navbar-height-mobile));
-    }
-
     .content-title {
         font-size: 3rem;
+        /* 2.07rem */
     }
 
     .content-title:after {
@@ -369,9 +365,18 @@
         font-size: 1.3rem;
     }
 
+    .issues-section-container {
+        min-height: calc(70vh - var(--navbar-height-mobile));
+    }
+
     .carousel {
+        margin: 30px 0 30px 0;
         height: 450px;
         width: 100%;
+    }
+
+    .carousel-issue-title {
+        font-size: 2.7rem;
     }
 
     .carousel-headshot {
@@ -393,6 +398,14 @@
 
     .carousel-control-prev, .carousel-control-next {
         width: 15%;
+    }
+
+    .deep-container {
+        min-height: calc(70vh - var(--navbar-height-mobile));
+    }
+
+    .deep-card-container {
+        margin: 30px 0 30px 0;
     }
 
     .deep-card {
@@ -427,6 +440,12 @@
 
     .footer a {
         font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 330px) {
+    .carousel {
+        margin: 30px 0 30px 0;
     }
 }
 
