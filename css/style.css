@@ -37,7 +37,6 @@
 
 .hero-section-container {
     background-color: var(--palin-red);
-    /* height: 100vh; */
     height: calc(100vh - var(--navbar-height));
     margin-top: var(--navbar-height);
 }
@@ -71,7 +70,7 @@
 .content-title {
     margin-bottom: 0px;
     font-family: arial;
-    /* display: inline-block; */
+    z-index: 100;
 
     font-weight: bold;
 }
@@ -82,19 +81,31 @@
     width: 100%;
     bottom: 0;
     border-bottom: 0.07em solid var(--palin-red);
-    margin-top: -10px;
+    margin-top: 0px;
 }
 
 /* Tynamic Duo Section */
 
 .duo-bios-container {
+    position: relative;
     padding: 20px 0 0 0;
     flex-flow: column; 
     min-height: calc(100vh - var(--navbar-height));
-    background-color: #6281c6; 
+    color: white;
+}
+
+.duo-bios-container:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url('../images/denali.jpg');
     background-size: cover;
-    color: white;
+    width: 100%;
+    height: 100%;
+    opacity : 0.8;
+    z-index: -1;
 }
 
 .duo-bios-body-container {
@@ -113,7 +124,12 @@
 .duo-bios .card {
     color: black;
     max-width: 700px;
-    background-color: rgb(255,255,255, 0.5);
+    border: 1px solid grey;
+    background-color: rgb(255,255,255, 0.9);
+
+    -webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
 }
 
 .duo-bios p {
@@ -124,7 +140,6 @@
 .half-portrait {
     max-height: 100%;
     position: absolute;
-    /* bottom: 0; */
 }
 
 .half-portrait-left {
@@ -339,7 +354,7 @@
 
     .content-title:after {
         width: 86%;
-        margin: -1px auto 0 auto;
+        margin: 4px auto 0 auto;
     }
 
     .duo-bios-container {
