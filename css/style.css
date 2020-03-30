@@ -63,7 +63,7 @@
     font-weight: bold;
 }
 
-.content-title:after {
+.content-title::after {
     content: "";
     display: block;
     width: 100%;
@@ -82,7 +82,7 @@
     color: white;
 }
 
-.duo-bios-container:after {
+.duo-bios-container::after {
     content : "";
     display: block;
     position: absolute;
@@ -273,8 +273,8 @@
 .donate-box {
     margin: 50px 0 50px 0;
     height: 50vh;
-    background-image: url('../images/Sarah Palin-02-min.png');
-    background-size: auto 100%;
+    background-image: url('../images/try.png');
+    background-size: 100% auto;
     background-position: right;
     background-repeat: no-repeat;
     background-color: black;
@@ -302,6 +302,7 @@
 .donate-text > * {
     color: white;
     font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
 .donate-text > h1 {
@@ -314,7 +315,7 @@
 }
 
 .footer img {
-    width: 60%;
+    width: 100%;
 }
 
 .footer-pipe {
@@ -322,6 +323,7 @@
     height: 100%;
     background-color: black;
     margin-left: auto;
+    /* border-right: 50% solid black; */
 }
 
 .footer a {
@@ -354,7 +356,7 @@
         /* 2.07rem */
     }
 
-    .content-title:after {
+    .content-title::after {
         width: 86%;
         margin: 4px auto 0 auto;
     }
@@ -463,5 +465,9 @@
     .duo-bios img {
         background-color: white;
         border-radius: 50%;
+    }
+
+    .donate-box {
+        background-size: auto 100%;
     }
 }
