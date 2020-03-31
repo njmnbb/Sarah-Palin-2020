@@ -2,7 +2,7 @@
     --palin-red: #ED1C24;
     --pastel-red: #d35050;
     --pastel-blue: #6281c6;
-    --navbar-height: 12vh;
+    --navbar-height: 115px;
     --navbar-height-mobile: 10vh;
 }
 
@@ -18,6 +18,7 @@
 
 #navigation-bar {
     height: var(--navbar-height);
+    min-height: 100px;
     background-color: white;
     font-size: 2.4em;
     font-family: carson;
@@ -32,13 +33,50 @@
 }
 
 #navbar-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
     height: 80%;
 }
 
-.hero-section-container {
-    background-color: var(--palin-red);
-    height: calc(100vh - var(--navbar-height));
+.navbar-donate-button {
+    background-color: var(--palin-red); 
+    position: absolute; 
+    right: 0; 
+    margin-right: 20px;
+}
+
+.navbar-donate-link {
+    color: white;
+    font-family: arial;
+    font-size: 35px;
+}
+
+.splash-section-fluid-container {
     margin-top: var(--navbar-height);
+    background-color: var(--palin-red);
+    min-height: 849px;
+    height: calc(100vh - var(--navbar-height));
+}
+
+.hero-section-container {
+    
+    margin-top: var(--navbar-height);
+}
+
+.splash-section-palin {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+    max-width: 93%;
+    max-height: 100%;
+    /* min-width: 700px; */
+    /* position: absolute; */
+}
+
+.splash-section-logo {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 700px;
 }
 
 .hero-section {
@@ -289,8 +327,9 @@
     font-weight: bold;
 }
 
-.donate-link:hover {
+.donate-link:hover, .navbar-donate-link:hover {
     text-decoration: none;
+    color: white;
 }
 
 .donate-pipe {
@@ -334,7 +373,6 @@
 }
 
 /***********************************/
-
 @media(max-height: 900px) {
     .carousel {
         margin: 30px 0 30px 0;
@@ -344,6 +382,25 @@
 @media(max-width: 768px) {
     #navigation-bar {
         height: var(--navbar-height-mobile);
+        min-height: 32px;
+    }
+
+    .navbar-donate-button {
+        margin-right: 10px;
+    }
+
+    .navbar-donate-link {
+        font-size: 18px;
+    }
+
+    .splash-section-fluid-container {
+        margin-top: var(--navbar-height-mobile);
+        min-height: auto;
+        height: calc(100vh - var(--navbar-height-mobile));
+    }
+
+    .splash-columns {
+        height: 50%;
     }
 
     .hero-section-container {
@@ -460,6 +517,10 @@
 @media(max-width: 1200px) {
     html {
         font-size: 0.7rem;
+    }
+
+    .splash-columns {
+        height: 50%;
     }
 
     .duo-bios img {
