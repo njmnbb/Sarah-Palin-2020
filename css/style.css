@@ -271,6 +271,7 @@
     margin-top: var(--navbar-height);
     padding-top: 20px;
     background-color: white;
+    min-height: 700px;
 }
 
 .error-page-image-container {
@@ -478,6 +479,7 @@
     .error-page-container {
         height: calc(100vh - var(--navbar-height-mobile));
         margin-top: var(--navbar-height-mobile);
+        min-height: 500px;
     }
 
     .error-page-message {
