@@ -2,7 +2,7 @@
     --palin-red: #ED1C24;
     --pastel-red: #d35050;
     --pastel-blue: #6281c6;
-    --navbar-height: 115px;
+    --navbar-height: 11vh;
     --navbar-height-mobile: 10vh;
 }
 
@@ -55,7 +55,7 @@
 .splash-section-fluid-container {
     margin-top: var(--navbar-height);
     background-color: var(--palin-red);
-    min-height: 849px;
+    min-height: 700px;
     height: calc(100vh - var(--navbar-height));
 }
 
@@ -67,7 +67,10 @@
 .splash-section-palin {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); 
-    max-width: 93%;
+    width: 90%;
+    /* height: auto; */
+    /* max-width: auto; */
+    /* height: 100%; */
     max-height: 100%;
     /* min-width: 700px; */
     /* position: absolute; */
@@ -79,13 +82,10 @@
     min-width: 700px;
 }
 
-.hero-section {
-    height: 100vh;
-}
-
-#hero-section-headshot {
-    max-height: 820px;
-    width: auto;
+.down-arrow {
+    height: 4rem;
+    width: 4rem;
+    opacity: 0.7;
 }
 
 .donate-card {
@@ -399,12 +399,13 @@
 
     .splash-section-fluid-container {
         margin-top: var(--navbar-height-mobile);
-        min-height: auto;
+        min-height: 500px;
         height: calc(100vh - var(--navbar-height-mobile));
+        max-height: calc(100vh - var(--navbar-height-mobile));
     }
 
     .splash-columns {
-        height: 50%;
+        /* height: 50%; */
     }
 
     .hero-section-container {
@@ -517,13 +518,29 @@
     }
 }
 
+@media(max-width: 576px) {
+    .splash-columns {
+        /* height: 50%; */
+    }
+}
+
 @media(max-width: 1200px) {
     html {
         font-size: 0.7rem;
     }
 
-    .splash-columns {
-        height: 50%;
+    .splash-section-fluid-container {
+        /* min-height: 100vh; */
+    }
+
+    .splash-section-palin {
+        /* --max-height: 100%; */
+        /* --height: auto; */
+        /* max-width: 100%; */
+        /* --width: auto; */
+        /* --max-width: 100%; */
+        /* height: auto; */
+        /* object-fit: contain; */
     }
 
     .duo-bios img {
